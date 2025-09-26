@@ -135,6 +135,10 @@ def get_environment_yml(instance: SWEbenchInstance, env_name: str) -> str:
 
 @cache
 def get_requirements_by_commit(repo: str, commit: str) -> str:
+    # Handle repositories with no requirements files
+    if not MAP_REPO_TO_REQS_PATHS[repo]:
+        return ""
+    
     for req_path in MAP_REPO_TO_REQS_PATHS[repo]:
         reqs_url = posixpath.join(SWE_BENCH_URL_RAW, repo, commit, req_path)
         reqs = requests.get(reqs_url, headers=HEADERS)

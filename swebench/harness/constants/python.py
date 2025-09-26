@@ -902,6 +902,117 @@ SPECS_PYDICOM.update(
 
 SPECS_HUMANEVAL = {k: {"python": "3.9", "test_cmd": "python"} for k in ["1.0"]}
 
+# SWE-Gym Repository Specifications
+SPECS_MONAI = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1.0", "1.1", "1.2", "1.3"]
+}
+
+SPECS_BOKEH = {
+    k: {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["3.0", "3.3", "3.4", "3.5"]
+}
+
+SPECS_CONAN = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["1.33", "1.38", "1.40", "1.44", "1.45", "1.46", "1.47", "1.48", "1.49", "1.50", "1.51", "1.52", "1.53", "1.54", "1.55", "1.57", "1.60", "1.61", "2.0", "2.1", "2.2", "2.3", "2.4"]
+}
+
+SPECS_DASK = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["2.25", "2.27", "2.28", "2.30", "2020.12", "2021.01", "2021.02", "2021.03", "2021.04", "2021.05", "2021.07", "2021.08", "2021.09", "2021.10", "2021.11", "2021.12", "2022.01", "2022.02", "2022.03", "2022.04", "2022.05", "2022.12", "2022.6", "2022.7", "2022.8", "2022.9", "2023.1", "2023.10", "2023.11", "2023.12", "2023.2", "2023.3", "2023.4", "2023.5", "2023.6", "2023.7", "2023.8", "2023.9", "2024.1", "2024.2", "2024.3", "2024.4", "2024.5"]
+}
+
+SPECS_HYDRA = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["1.0", "1.1", "1.2", "1.3", "1.4"]
+}
+
+SPECS_MOTO = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["3.0", "3.1", "4.0", "4.1", "4.2", "5.0"]
+}
+
+SPECS_DVC = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["0.27", "0.28", "0.29", "0.30", "0.31", "0.32", "0.33", "0.34", "0.35", "0.40", "0.41", "0.50", "0.51", "0.52", "0.89", "0.90", "0.91", "0.92", "0.93", "1.0", "1.1", "1.10", "1.11", "1.3", "1.4", "1.6", "1.7", "1.8", "1.9", "2.0", "2.1", "2.19", "2.20", "2.21", "2.24", "2.27", "2.28", "2.45", "2.5", "2.50", "2.51", "2.52", "2.55", "2.56", "2.58", "2.6", "2.7", "2.8", "3.0", "3.1", "3.10", "3.12", "3.13", "3.15", "3.17", "3.37", "3.4", "3.43", "3.48", "3.49", "3.6"]
+}
+
+SPECS_MODIN = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["0.20", "0.22", "0.23", "0.24", "0.25", "0.26", "0.27", "0.28", "0.29"]
+}
+
+SPECS_PANDAS_SWEGYM = {
+    k: {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e . --no-build-isolation",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["1.5", "2.0", "2.1", "2.2", "3.0"]
+}
+
+SPECS_PYDANTIC = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["2.0", "2.01", "2.02", "2.03", "2.04", "2.4", "2.5", "2.6", "2.7"]
+}
+
+SPECS_MYPY = {
+    k: {
+        "python": "3.8",
+        "packages": "requirements.txt",
+        "install": "python -m pip install -e .",
+        "test_cmd": TEST_PYTEST,
+    }
+    for k in ["0.800", "0.810", "0.820", "0.910", "0.920", "0.940", "0.950", "0.960", "0.970", "0.980", "0.990", "1.0", "1.10", "1.11", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9"]
+}
+
 # Constants - Task Instance Instllation Environment
 MAP_REPO_VERSION_TO_SPECS_PY = {
     "astropy/astropy": SPECS_ASTROPY,
@@ -924,6 +1035,18 @@ MAP_REPO_VERSION_TO_SPECS_PY = {
     "sqlfluff/sqlfluff": SPECS_SQLFLUFF,
     "swe-bench/humaneval": SPECS_HUMANEVAL,
     "sympy/sympy": SPECS_SYMPY,
+    # SWE-Gym repositories
+    "Project-MONAI/MONAI": SPECS_MONAI,
+    "bokeh/bokeh": SPECS_BOKEH,
+    "conan-io/conan": SPECS_CONAN,
+    "dask/dask": SPECS_DASK,
+    "facebookresearch/hydra": SPECS_HYDRA,
+    "getmoto/moto": SPECS_MOTO,
+    "iterative/dvc": SPECS_DVC,
+    "modin-project/modin": SPECS_MODIN,
+    "pandas-dev/pandas": SPECS_PANDAS_SWEGYM,
+    "pydantic/pydantic": SPECS_PYDANTIC,
+    "python/mypy": SPECS_MYPY,
 }
 
 # Constants - Repository Specific Installation Instructions
@@ -943,6 +1066,18 @@ MAP_REPO_TO_REQS_PATHS = {
     "pyvista/pyvista": ["requirements_test.txt", "requirements.txt"],
     "sqlfluff/sqlfluff": ["requirements_dev.txt"],
     "sympy/sympy": ["requirements-dev.txt", "requirements-test.txt"],
+    # SWE-Gym repositories
+    "Project-MONAI/MONAI": ["requirements.txt"],
+    "bokeh/bokeh": [],
+    "conan-io/conan": ["conans/requirements.txt", "conans/requirements_dev.txt"],
+    "dask/dask": [],
+    "facebookresearch/hydra": ["requirements/requirements.txt"],
+    "getmoto/moto": ["requirements.txt"],
+    "iterative/dvc": [],
+    "modin-project/modin": ["requirements-dev.txt"],
+    "pandas-dev/pandas": ["requirements-dev.txt"],
+    "pydantic/pydantic": [],
+    "python/mypy": ["test-requirements.txt", "mypy-requirements.txt"],
 }
 
 
